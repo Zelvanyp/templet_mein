@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(futuristic-banner-background-with-wireframe-terrain-vector.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    background-color: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .login-container h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 0.3rem;
+  }
+  
+  .login-container p.subtitle {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+  }
+  
+  .error-message {
+    background-color: #fdecea;
+    color: #e74c3c;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s;
+  }
+  
+  .login-container input[type="text"]:focus,
+  .login-container input[type="password"]:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .login-container button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-container button[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  
+  .login-container .register-prompt {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: #34495e;
+  }
+  
+  .login-container .register-prompt a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .login-container .register-prompt a:hover {
+    color: #2980b9;
+  }
+  
+  @media (max-width: 480px) {
+    .login-container {
+      padding: 2rem 1.5rem;
+      border-radius: 8px;
+    }
+  
+    .login-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .login-container p.subtitle {
+      font-size: 0.95rem;
+    }
+  }
+  
